@@ -1,0 +1,27 @@
+/*h1 {
+    color: blue;
+    background-color: rgb(130, 130, 106);
+}
+p{
+    color: rgb(41, 79, 112);
+    font-size: 26px;
+    background-color: antiquewhite;
+}*/
+
+.c1{
+    font-style:italic;
+    background-color: #ffe4c4;
+    color: rgba(28, 102, 152, 0.729);
+    font-size: 20px;
+}
+
+.bg{
+    background-color:rgb(190, 171, 171);
+    font-size: 25px; 
+    padding-left: 1cm;
+}
+
+#map{
+    font-size: 20px;
+}
+
