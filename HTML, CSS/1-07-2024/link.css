@@ -1,0 +1,46 @@
+/*h1 {
+    color: blue;
+    background-color: rgb(130, 130, 106);
+}
+p{
+    color: rgb(41, 79, 112);
+    font-size: 26px;
+    background-color: antiquewhite;
+}*/
+
+.c1{
+    font-style:italic;
+    background-color: #ffe4c4;
+    color: rgba(28, 102, 152, 0.729);
+    font-size: 20px;
+}
+
+.bg{
+    background-color:rgb(215, 203, 203);
+    font-size: 20x;
+    color: rgb(45, 115, 176); 
+    border: solid rgb(142, 136, 129);
+    max-width: 7cm;
+}
+
+#map{
+    font-size: 20px;
+}
+
+.city{
+background-color: rgb(206, 224, 239);
+padding-left: 5cm;
+padding-right: 5cm;
+font-size: 18px;
+text-align: justify;
+word-spacing: 5px;
+}
+
+.flexx > div {
+    margin: 10px;
+    padding: 20px;
+    float: right;
+    flex: content;
+    background-color: rgb(171, 197, 220);
+  }
+
