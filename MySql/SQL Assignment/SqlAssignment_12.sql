@@ -43,8 +43,9 @@ limit 10;
  select first_name,last_name,email, max(r.rental_date) as last_rental
  from customer c
  join rental r on r.customer_id=c.customer_id
- where r.rental_date >= curdate()- interval 20 year
+ where r.rental_date >= date_sub(now(), interval 30 day)
  group by c.customer_id
+ having max(r.rental_date)>=date_sub(now(), interval 30 day);
  
  /* ### Problem Statement 4
 **Create a view named `inventory_by_store` that displays the number
