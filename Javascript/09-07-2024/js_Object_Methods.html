@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //JavaScript Object Methods
+      
+        //Object.assign()
+        var emp1={name:"shreyash",salary:40000};
+        var emp2={name:"Anshul",salary:50000};
+        var emp3=Object.assign(emp1,emp2);
+        console.log(emp3.name+" "+emp3.salary);  
+        console.log(emp1.name+" "+emp1.salary);
+    </script>
+
+        <script>
+            //Object.create()
+            var emp1={name:"shreyash",salary:40000};
+            var emp2=Object.create(emp1);
+            emp2.name="Anshul";
+            emp2.salary=50000;
+            console.log(emp2.name+" "+emp2.salary);
+            console.log(emp1.name+" "+emp1.salary);
+            
+        </script>
+
+        <script>
+        //Object.defineP
+        </script>>
+</body>
+</html>

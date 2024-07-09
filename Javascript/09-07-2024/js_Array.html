@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //By array literal
+    var studnames=["shreyash","anshul","siddharth","anusha"];
+    for(var i=0; i<studnames.length; i++)
+    {
+        console.log(studnames[i]);
+    }
+    </script>
+
+    <script>
+        //By creating instance of Array directly (using new keyword)
+        var studnames=new Array();
+        studnames[0]="Shreyash"
+        studnames[1]="Anshul"
+        studnames[2]="Anusha"
+        for(var i=0; i<studnames.length; i++)
+        {
+            console.log(studnames[i]);
+        }
+    </script>
+
+    <script>
+        //By using an Array constructor (using new keyword)
+        var sports=new Array("Cricket","Football","Badminton");
+        for(var i=0; i<sports.length; i++)
+        {
+            console.log(sports[i]);
+        }
+        
+    </script>
+</script>
+    </body>
+</html>

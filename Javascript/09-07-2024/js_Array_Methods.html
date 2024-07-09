@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //concat()
+        var arr1 = [1, 2, 3, 4, 5];
+        var arr2 = [6, 7, 8, 9, 10];
+        var arr3 = arr1.concat(arr2);
+        console.log(arr3);
+    </script>
+
+    <script>
+        //copywithin()
+        var arr1=[1,2,3,4,];
+        var result= arr1.copyWithin(1,3);
+        console.log(result);
+    </script>
+
+    <script>
+        //entries()
+        var arr1=[1,2,3,4,5,6,7,8,9,10];
+        var it= arr1.entries();
+        document.write(it);
+        for(var i of it)
+        {
+            console.log(i);
+        }
+    </script>
+
+    <script>
+        //every()
+        var arr1=[100,200,300];
+        function check(value)
+        {
+            return value>50;
+        }
+        console.log(arr1.every(check));
+    </script>
+
+    <script>
+        //find
+        var arr1=[100,200,300,400,500];
+        function check(value)
+        {
+            return value>200;
+        }
+        console.log(arr1.find(check));
+    </script>
+</body>
+</html>
