@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            var db=new Date("04/24/2001");
+            var month_diff=Date.now()- db.getTime();
+            var age=new Date(month_diff);
+            var year=age.getFullYear();
+            var newAge=Math.abs(year - 1970);
+            document.write(newAge);
+            console.log(newAge);
+    </script>
+
+    <script>
+    function dateDiff(date1, date2) {
+    var yearDiff = date2.getFullYear() - date1.getFullYear();
+    var monthDiff = date2.getMonth() - date1.getMonth();
+  
+    if (monthDiff < 0) {
+      yearDiff--;
+      monthDiff += 12;
+    }
+  
+    return {
+      years: yearDiff,
+      months: monthDiff,
+    }; 
+  }
+  
+  const date1 = new Date("2001-04-24");
+  const date2 = new Date();
+  
+  const difference = dateDiff(date1, date2);
+  console.log("Difference:", difference);
+    </script>
+</body>
+</html>
