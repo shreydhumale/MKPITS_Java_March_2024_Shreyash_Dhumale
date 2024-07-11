@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function msg(){
+            var v=confirm("Are you sure you want to delete this record?");
+            if(v==true){
+                alert("Record Deleted");
+            }else{
+                alert("Record Not Deleted");
+            }
+        }
+    </script>
+    <input type="button" value="click" onclick="msg()">
+</body>
+</html>
