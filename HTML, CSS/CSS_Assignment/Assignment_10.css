@@ -1,0 +1,12 @@
+.alternate-rows tr:nth-child(even) {
+    background-color: #f2f2f2; 
+}
+
+.alternate-rows tr:hover {
+    background-color: #ddd; 
+}
+
+.alternate-rows th {
+    background-color: #333;
+    color: #fff;
+}
