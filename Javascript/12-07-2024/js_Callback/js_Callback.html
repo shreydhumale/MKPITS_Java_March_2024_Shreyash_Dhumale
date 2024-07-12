@@ -17,5 +17,21 @@
         }
         product(10,20, showresult)
     </script>
+
+    <script>
+        function welcome(){}
+
+        function product(callback){
+            let a=prompt("Enter first number ");
+            let b=prompt("Enter second number ");
+            let result=a*b;
+            callback(result);
+        }
+
+        function showresult(r){
+            document.write("Result = "+r)
+        }
+    </script>
+    <input type="button" type="value" onclick="product(showresult)" value="product">
 </body>
 </html>
