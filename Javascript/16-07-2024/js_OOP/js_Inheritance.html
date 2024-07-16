@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>  
+        class Moment extends Date {
+            constructor(){
+                super();
+            }
+        }  
+           
+        var m=new Moment();  
+        document.writeln("Current date:")  
+        document.writeln(m.getDate()+"-"+(m.getMonth()+1)+"-"+m.getFullYear());  
+        </script>  
+
+        <!-- Another Example of Inheritance -->
+         
+        <script>
+            class Bike{
+                constructor(){
+                    this.company="suzuki";
+                }
+            }
+            class Vehicle extends Bike{
+                constructor(name,price){
+                super();
+                this.name=name;
+                this.price=price;    
+                }
+            }
+            var v=new Vehicle("Access","180");
+            document.write(v.company+" "+ v.name+" "+v.price);
+        </script>
+</body>
+</html>
