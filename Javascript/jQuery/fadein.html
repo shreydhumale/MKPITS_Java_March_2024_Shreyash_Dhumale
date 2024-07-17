@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
+<script>  
+$(document).ready(function(){  
+    $("button").click(function(){  
+        $("#div1").fadeIn();  
+        $("#div2").fadeIn("slow");  
+        $("#div3").fadeIn(3000);  
+    });  
+});     
+</script>
+    <button id="button">button</button>
+    <div id="div1" style="display:none;">helloooooooooo</div>
+    <div id="div2" style="display:none;">helloooooooooo</div>
+    <div id="div3" style="display:none;">helloooooooooo</div>
+
+</body>
+</html>

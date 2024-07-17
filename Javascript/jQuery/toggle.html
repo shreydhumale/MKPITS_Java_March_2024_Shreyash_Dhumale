@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fade In Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>    
+        $(document).ready(function(){  
+            $("button").click(function(){  
+                $("#div1").fadeIn(1000);  
+                $("#div2").fadeIn(2000);  
+                $("#div3").fadeIn(3000);  
+            });  
+        });
+    </script>   
+</head>
+<body>
+    <div id="div1" style="display:none;">helloooooooooo</div>
+    <div id="div2" style="display:none;">helloooooooooo</div>
+    <div id="div3" style="display:none;">helloooooooooo</div>
+    <button id="button">button</button>
+</body>
+</html>
