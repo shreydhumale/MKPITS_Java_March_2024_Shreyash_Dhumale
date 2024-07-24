@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Management</title>
+</head>
+<body>
+    <h2>User Registration</h2>
+    <form action="register" method="post">
+        Name: <input type="text" name="name"/><br><br>
+        Address: <input type="text" name="address"/><br><br>
+        Country:
+        <select name="country">
+            <option>India</option>
+            <option>Australia</option>
+            <option>England</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Submit"/>
+    </form>
+
+    <h2>Read Users</h2>
+    <form method="get" action="register">
+        <input type="hidden" name="action" value="read">
+        <input type="submit" value="Read Users">
+    </form>
+
+    <h2>Update User</h2>
+    <form method="get" action="register">
+        <input type="hidden" name="action" value="update">
+        ID: <input type="text" name="id"/><br><br>
+        Name: <input type="text" name="name"/><br><br>
+        Address: <input type="text" name="address"/><br><br>
+        Country:
+        <select name="country">
+            <option>India</option>
+            <option>Australia</option>
+            <option>England</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Update"/>
+    </form>
+
+    <h2>Delete User</h2>
+    <form method="get" action="register">
+        <input type="hidden" name="action" value="delete">
+        ID: <input type="text" name="id"/><br><br>
+        <input type="submit" value="Delete"/>
+    </form>
+</body>
+</html>
