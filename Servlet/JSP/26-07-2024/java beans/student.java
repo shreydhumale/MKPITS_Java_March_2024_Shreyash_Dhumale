@@ -30,4 +30,12 @@ public class student {
     public void setMarks(int marks) {
         this.marks = marks;
     }
+    
+    public String getResults(){
+        if(marks <=35)
+        return "fail";
+        else
+        return "pass";
+   
+    }
 }
