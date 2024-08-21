@@ -5,7 +5,6 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 @Entity //to map with database
 @Data
@@ -24,8 +23,6 @@ public class Student {
         this.firstname = firstname;
         this.lastname = lastname;
         this.email = email;
-        
-        
     }
 
 	@Override

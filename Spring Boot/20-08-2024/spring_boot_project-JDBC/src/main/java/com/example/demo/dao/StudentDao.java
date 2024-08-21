@@ -6,5 +6,5 @@ public interface StudentDao {
 	
 	Student findById(int id);
 	
-	
+	void deleteByID(int id);
 }

@@ -18,11 +18,19 @@ public class SpringBootProject1Application {
     @Bean
     public CommandLineRunner commandLineRunner(StudentDao studentDao) {
         return runner -> {
+        	
+        	//to insert a student
             Student student = new Student("Rahul", "Kelkar", "rahul@gmail.com");
             studentDao.save(student);
             
-            Student student2 = studentDao.findById(1);
+        	//to find a student
+            Student student2 = studentDao.findById(4);
             System.out.println(student2);
+        	
+        	//to delete a student
+        	studentDao.deleteByID(10);
+        	studentDao.deleteByID(11);
+        	studentDao.deleteByID(12);
         };
     }
 }

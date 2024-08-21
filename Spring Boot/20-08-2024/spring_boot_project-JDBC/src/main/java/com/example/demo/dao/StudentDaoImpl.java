@@ -26,4 +26,14 @@ public class StudentDaoImpl implements StudentDao {
 	public Student findById(int id) {
 	 return	entityManager.find(Student.class, id);
 	}
+
+	@Override
+	@Transactional
+	public void deleteByID(int id) {
+	    Student student = entityManager.find(Student.class, id);
+	    entityManager.remove(student);
+	}
+
+
+
 }
