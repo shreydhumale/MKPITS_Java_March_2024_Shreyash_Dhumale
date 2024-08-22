@@ -7,4 +7,6 @@ public interface StudentDao {
 	Student findById(int id);
 	
 	void deleteByID(int id);
+	
+	void update(int id);
 }
