@@ -49,4 +49,19 @@ public class StudentDaoImplement implements StudentDao{
 		return student;
 	}
 
+
+	@Override
+	public void update(int id, String firstname, String lastname) {
+		Student student = entityManager.find(Student.class, id);
+		if(student == null) {
+			student.setFirstname(firstname);
+			student.setLastname(lastname);
+			entityManager.merge(student);
+			System.out.println("update successful");
+		}
+		else {
+			System.out.println("could not update");
+		}
+	}
+
 }

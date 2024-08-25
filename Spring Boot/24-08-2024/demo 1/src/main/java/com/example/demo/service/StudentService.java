@@ -13,4 +13,6 @@ public interface StudentService {
 	
 	public Student findById(int id);
 	
+	public void update(int id,String firstname,String lastname);
+
 }

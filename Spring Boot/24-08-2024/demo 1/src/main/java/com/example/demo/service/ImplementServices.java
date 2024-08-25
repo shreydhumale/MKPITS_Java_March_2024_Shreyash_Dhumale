@@ -45,4 +45,9 @@ public class ImplementServices implements StudentService{
 	
 		return student;
 	}
+
+	@Override
+	public void update(int id, String firstname, String lastname) {
+		studentDao.update(id, firstname, lastname);
+	}
 }

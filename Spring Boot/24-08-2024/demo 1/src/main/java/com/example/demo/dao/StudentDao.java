@@ -12,4 +12,8 @@ public interface StudentDao {
 	public void delete(int id);
 	
 	public Student findByID(int id);
+	
+	public void update(int id,String firstname,String lastname);
+
+	
 }
