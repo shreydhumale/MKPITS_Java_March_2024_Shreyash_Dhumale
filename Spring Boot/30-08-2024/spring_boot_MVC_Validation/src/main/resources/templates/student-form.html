@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Student Form</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+<body>
+	<form action="#" th:action="@{/processStudentForm}" th:object="${student}" method="post">
+		First name: <input type="text" th:field="*{firstName}" />
+		   <span th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}">First name is required</span>
+		   <br><br>
+
+		   Last name: <input type="text" th:field="*{lastName}" />
+		   <span th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}">Last name is required</span>
+		   <br><br>
+
+        City: <select th:field="*{city}">
+            <option th:value="Amravati">Amravati</option>
+            <option th:value="Pune">Pune</option>
+            <option th:value="Mumbai">Mumbai</option>
+            <option th:value="Delhi">Delhi</option>
+        </select>
+        <br><br>
+        Favorite Subject: 
+        <input type="radio" th:field="*{favoriteSubject}" th:value="Maths" /> Maths
+        <input type="radio" th:field="*{favoriteSubject}" th:value="Physics" /> Physics
+        <input type="radio" th:field="*{favoriteSubject}" th:value="Chemistry" /> Chemistry
+        <br><br>
+        Favourite Language:<br>
+        <input type="checkbox" th:field="*{favouriteLangauge}" th:value="Java" /> Java<br>
+        <input type="checkbox" th:field="*{favouriteLangauge}" th:value="Python" /> Python<br>
+        <input type="checkbox" th:field="*{favouriteLangauge}" th:value="'C++'" /> C++<br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
