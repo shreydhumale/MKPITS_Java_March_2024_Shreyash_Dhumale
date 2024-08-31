@@ -9,5 +9,4 @@ public class SpringBootMvcDataBindingApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBootMvcDataBindingApplication.class, args);
 	}
-
 }

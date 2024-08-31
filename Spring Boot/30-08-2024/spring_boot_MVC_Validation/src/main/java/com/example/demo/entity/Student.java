@@ -6,15 +6,21 @@ import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 
 public class Student {
-	@NotNull(message = "first name required")
-	@Size(min=1, message = "first name is required")
-	private String firstName;
-	
-	@NotNull(message = "last name required")
-	@Size(min=1, message = "last name is required")
-	private String lastName;
-	private String city;
-	private String favoriteSubject;
+	@NotNull(message = "First name is required")
+    @Size(min = 1, message = "First name is required")
+    private String firstName;
+
+    @NotNull(message = "Last name is required")
+    @Size(min = 1, message = "Last name is required")
+    private String lastName;
+
+    @NotNull(message = "City is required")
+    @Size(min = 1, message = "City is required")
+    private String city;
+
+    @NotNull(message = "Favorite subject is required")
+    @Size(min = 1, message = "Favorite subject is required")
+    private String favoriteSubject;
 	private List<String> favouriteLangauge;
 	
 	public Student() {

@@ -2,35 +2,52 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Student Form</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-	<form action="#" th:action="@{/processStudentForm}" th:object="${student}" method="post">
-		First name: <input type="text" th:field="*{firstName}" />
-		   <span th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}">First name is required</span>
-		   <br><br>
-
-		   Last name: <input type="text" th:field="*{lastName}" />
-		   <span th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}">Last name is required</span>
-		   <br><br>
-
-        City: <select th:field="*{city}">
-            <option th:value="Amravati">Amravati</option>
-            <option th:value="Pune">Pune</option>
-            <option th:value="Mumbai">Mumbai</option>
-            <option th:value="Delhi">Delhi</option>
-        </select>
+    <form action="#" th:action="@{/processStudentForm}" th:object="${student}" method="post">
+        <div>
+            First name: <input type="text" th:field="*{firstName}" />
+            <span th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}">First name is required</span>
+        </div>
         <br><br>
-        Favorite Subject: 
-        <input type="radio" th:field="*{favoriteSubject}" th:value="Maths" /> Maths
-        <input type="radio" th:field="*{favoriteSubject}" th:value="Physics" /> Physics
-        <input type="radio" th:field="*{favoriteSubject}" th:value="Chemistry" /> Chemistry
+
+        <div>
+            Last name: <input type="text" th:field="*{lastName}" />
+            <span th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}">Last name is required</span>
+        </div>
         <br><br>
-        Favourite Language:<br>
-        <input type="checkbox" th:field="*{favouriteLangauge}" th:value="Java" /> Java<br>
-        <input type="checkbox" th:field="*{favouriteLangauge}" th:value="Python" /> Python<br>
-        <input type="checkbox" th:field="*{favouriteLangauge}" th:value="'C++'" /> C++<br>
+
+        <div>
+            City: 
+            <select th:field="*{city}">
+                <option th:value="Amravati">Amravati</option>
+                <option th:value="Pune">Pune</option>
+                <option th:value="Mumbai">Mumbai</option>
+                <option th:value="Delhi">Delhi</option>
+            </select>
+            <span th:if="${#fields.hasErrors('city')}" th:errors="*{city}">City is required</span>
+        </div>
+        <br><br>
+
+        <div>
+            Favorite Subject: 
+            <input type="radio" th:field="*{favoriteSubject}" value="Maths" /> Maths
+            <input type="radio" th:field="*{favoriteSubject}" value="Physics" /> Physics
+            <input type="radio" th:field="*{favoriteSubject}" value="Chemistry" /> Chemistry
+            <span th:if="${#fields.hasErrors('favoriteSubject')}" th:errors="*{favoriteSubject}">Favorite subject is required</span>
+        </div>
+        <br><br>
+
+        <div>
+			Favourite Language:<br>
+			        <input type="checkbox" th:field="*{favouriteLangauge}" th:value="Java" /> Java<br>
+			        <input type="checkbox" th:field="*{favouriteLangauge}" th:value="Python" /> Python<br>
+			        <input type="checkbox" th:field="*{favouriteLangauge}" th:value="'C++'" /> C++<br>
+			        <button type="submit">Submit</button>	
+        </div>
+        <br><br>
+
         <button type="submit">Submit</button>
     </form>
 </body>
