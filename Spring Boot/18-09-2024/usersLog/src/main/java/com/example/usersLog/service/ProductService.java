@@ -1,0 +1,9 @@
+package com.example.usersLog.service;
+
+import java.util.List;
+
+import com.example.usersLog.entity.Product;
+
+public interface ProductService {
+	Product saveProduct(Product product);
+}
